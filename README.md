@@ -2,6 +2,10 @@
 
 A Telegram bot that waits for YouTube URLs and replies back with the video.
 
+## Why
+
+https://cristian.io/post/youtube-telegram/
+
 ## How to run
 
 You need to create your own bot using [BotFather](https://t.me/botfather). Then:
