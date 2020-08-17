@@ -15,7 +15,7 @@ def pull_formats(url):
 
     formats = {}
     for format in video_info['formats']:
-        if format['ext'] == "mp4" and format['format_note'] in supported_formats:
+        if format['ext'] == "mp4" and format['acodec'] != 'none' and format['format_note'] in supported_formats:
             formats[format['format_note']] = {
                 'filesize': format['filesize'] or 0,
                 'format_id': format['format_id']
